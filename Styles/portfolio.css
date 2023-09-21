@@ -3,6 +3,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* header section styles */
+
 header {
     background-color: #FFF8F3;
     background-image: url("../images/header_bg.png"), url("../images/developer.png");
@@ -93,4 +95,44 @@ nav h1 span {
 .fa-phone {
     margin-right: 10px;
     color: #FD6E0A;
+}
+
+/* About Me Section styles */
+
+.about-me {
+    background-color: #FFF8F3;
+    margin: 130px 230px;
+    padding: 130px 156px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-me .title {
+    color: #181818;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about-me .description {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.address {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.address p {
+    color: #757575;
+    font-size: 18px;
+}
+
+.address h5 {
+    color: #181818;
+    font-size: 20px;
+    font-weight: bold;
 }
