@@ -5,11 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
+
+    <!-- google fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- css styles -->
+
     <link rel="stylesheet" href="Styles/portfolio.css">
+
+    <!-- font awesome -->
+
     <script src="https://kit.fontawesome.com/af439c5290.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -18,36 +28,40 @@
 
     <header>
         <nav>
-            <h1 class="nav-title">Ma<span>r</span>y</h1>
-            <ul class="nav-list">
+            <h1 class="nav-logo">Ma<span class="special-color-character">r</span>y</h1>
+            <ul class="nav-links">
                 <li>Portfolio</li>
                 <li>Blogs</li>
-                <li><button class="primary-button">Hire Me</button></li>
+                <li><button class="btn-primary">Hire Me</button></li>
             </ul>
         </nav>
-        <div class="header-banner">
+        <div class="banner">
             <div>
-                <h3>Hi, I am</h3>
-                <h1>Mary Hardy</h1>
-                <p>Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning because as to society
+                <h3 class="developers-greeting">Hi, I am</h3>
+                <h1 class="developer-name">Mary Hardy</h1>
+                <p class="developer-info">Shot what able cold new see hold.Friendly as an betrayed formerly <br /> he.
+                    Morning
+                    because as to society
                     behaved moments.</p>
-                <button class="primary-button">
+                <button class="btn-primary">
                     <i class="fa-solid fa-download"></i>
                     Download CV
                 </button>
-                <button class="secondary-button">
+                <button class="btn-outline">
                     <i class="fa-solid fa-phone"></i>
                     Contact
                 </button>
             </div>
-            <img src="images/hardy.png" alt="">
+            <div class="developer-picture">
+                <img src="images/hardy.png" alt="">
+            </div>
         </div>
     </header>
 
     <!-- About Me Section -->
 
     <main>
-        <section class="about-me">
+        <section class="about-me hide">
             <h1 class="title">About Me</h1>
             <p class="description">
                 I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and slick
@@ -77,7 +91,7 @@
 
         <!-- What I do section -->
 
-        <section class="skills-portion">
+        <section class="skills-portion hide">
             <h1 class="title">What I do</h1>
             <p class="description">
                 I have more than 10 years experience building software for clients all over the world. Below is a quick
@@ -119,7 +133,7 @@
 
         <!-- Resume Section -->
 
-        <section class="resume">
+        <section class="resume hide">
             <h2 class="resume-headline">A summary of My Resume</h2>
             <div class="resume-summary">
                 <div>
@@ -193,7 +207,7 @@
             </div>
         </section>
     </main>
-    <footer class="contact">
+    <footer class="contact hide">
         <div>
             <h2>Lets Connect</h2>
             <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET,

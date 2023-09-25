@@ -1,6 +1,37 @@
-* {
-    margin: 0;
+body {
+    max-width: 1584px;
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
+}
+
+/* ------------------
+Common styles
+-------------------- */
+
+.title {
+    font-size: 2.25vw;
+    font-weight: bold;
+}
+
+.btn-primary {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #FD6E0A;
+    padding: 18px 36px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn-outline {
+    font-size: 1.25vw;
+    font-weight: bold;
+    color: #FD6E0A;
+    background-color: transparent;
+    border: 1px solid #FD6E0A;
+    border-radius: 5px;
+    padding: 17px 36px;
+    margin-left: 30px;
 }
 
 /* header section styles */
@@ -15,81 +46,59 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 50px 230px 0;
-    margin-bottom: 47px;
+    padding: 3.25vw 14.5vw 0;
+    margin-bottom: 3vw;
 }
 
-.nav-title {
-    font-size: 45px;
-    font-weight: bold;
+.nav-logo {
+    font-size: 2.84vw;
+    font-weight: 900;
     color: #181818;
 }
 
-nav h1 span {
+.special-color-character {
     color: #FD6E0A;
 }
 
-.nav-list {
+.nav-links {
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 2vw;
     align-items: center;
     color: #474747;
     font-size: 20px;
 }
 
-.primary-button {
-    color: #ffffff;
-    background-color: #FD6E0A;
-    padding: 18px 36px;
-    border: 0;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.header-banner {
+.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 230px;
-    padding-right: 38px;
-
+    padding-left: 14.5vw;
+    padding-right: 2.4vw;
 }
 
-.header-banner h3 {
-    font-size: 45px;
+.developers-greeting {
+    font-size: 2.84vw;
     font-weight: 600;
     color: #474747;
 }
 
-.header-banner h1 {
-    font-size: 85px;
+.developer-name {
+    font-size: 5.37vw;
     font-weight: bold;
     color: #181818;
     margin-bottom: 20px;
 }
 
-.header-banner p {
+.developer-info {
     font-size: 18px;
     color: #757575;
     margin-bottom: 30px;
-    width: 585px;
 }
+
 
 .fa-download {
     margin-right: 10px;
-}
-
-.secondary-button {
-    color: #FD6E0A;
-    background-color: #FFF8F3;
-    border: 1px solid #FD6E0A;
-    border-radius: 5px;
-    margin-left: 30px;
-    padding: 18px 24px;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 .fa-phone {
@@ -97,13 +106,18 @@ nav h1 span {
     color: #FD6E0A;
 }
 
-/* Main section styles */
+.developer-picture img {
+    width: 100%;
+}
+
+/*
+ Main section styles 
 
 main {
     margin: 0 230px;
 }
 
-/* About Me Section styles */
+ About Me Section styles 
 
 .about-me {
     background-color: #FFF8F3;
@@ -143,7 +157,7 @@ main {
     font-weight: bold;
 }
 
-/* What I do Styles */
+ What I do Styles 
 
 .skills-portion {
     margin-bottom: 130px;
@@ -191,7 +205,7 @@ main {
     color: #757575;
 }
 
-/* Resume section Styles */
+ Resume section Styles 
 
 .resume-headline {
     font-size: 35px;
@@ -242,7 +256,7 @@ hr {
     margin-bottom: 113px;
 }
 
-/* footer section styles */
+ footer section styles 
 
 footer {
     background-color: #FFF8F3;
@@ -281,4 +295,51 @@ textarea {
     border-radius: 5px;
     padding: 18px 0 0 30px;
     margin-bottom: 24px;
+} */
+
+/* ----------------------------------
+Responsive styles for small device 
+------------------------------------*/
+
+@media only screen and (max-width:688px) {
+
+    header {
+        background-size: contain;
+    }
+
+    nav,
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        align-items: start;
+        padding-left: 0;
+        gap: 1vw;
+    }
+
+    .nav-links,
+    .btn-primary,
+    .btn-outline {
+        font-size: 16px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+}
+
+/* ----------------------------------
+Responsive styles for medium device 
+------------------------------------*/
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .btn-outline {
+        margin-top: 20px;
+    }
+}
+
+.hide {
+    display: none;
 }
