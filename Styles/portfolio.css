@@ -324,6 +324,15 @@ Responsive styles for small device
         font-size: 16px;
     }
 
+    .btn-primary,
+    .btn-outline {
+        margin-bottom: 20px;
+    }
+
+    .btn-outline {
+        margin-top: 20px;
+    }
+
     .banner {
         flex-direction: column-reverse;
         align-items: start;
@@ -337,6 +346,11 @@ Responsive styles for medium device
 @media only screen and (min-width:689px) and (max-width:992px) {
     .btn-outline {
         margin-top: 20px;
+    }
+
+    .btn-primary,
+    .btn-outline {
+        margin-bottom: 20px;
     }
 }
 
