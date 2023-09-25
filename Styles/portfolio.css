@@ -243,47 +243,37 @@ hr {
     margin-bottom: 113px;
 }
 
-/*
+/*------------------------
  footer section styles 
+-------------------------*/
 
 footer {
     background-color: #FFF8F3;
-    padding: 130px 230px;
+    padding: 8.2vw 14.5vw;
     display: flex;
-    gap: 117px;
+    gap: 7.4vw;
 }
 
-footer h2 {
-    font-size: 35px;
-    font-weight: bold;
-    color: #181818;
+footer .title {
     margin-bottom: 20px;
 }
 
-footer p {
-    color: #474747;
-    margin-bottom: 30px;
+footer .description {
+    font-size: 16px;
 }
 
 .twitter {
     margin: 0 24px;
 }
 
-input {
+input,
+textarea {
     width: 100%;
     border: 0;
     border-radius: 5px;
     margin-bottom: 24px;
     padding: 18px 0px 18px 30px;
 }
-
-textarea {
-    width: 100%;
-    border: 0;
-    border-radius: 5px;
-    padding: 18px 0 0 30px;
-    margin-bottom: 24px;
-} */
 
 /* ----------------------------------
 Responsive styles for small device 
@@ -316,7 +306,8 @@ Responsive styles for small device
         margin: 20px 0;
     }
 
-    .banner {
+    .banner,
+    footer {
         flex-direction: column-reverse;
         align-items: start;
     }
@@ -370,8 +361,4 @@ Responsive styles for medium device
         grid-template-columns: repeat(2, 1fr);
         row-gap: 18px;
     }
-}
-
-.hide {
-    display: none;
 }
